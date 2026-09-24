@@ -1,0 +1,7 @@
+.row { display: flex; gap: 1em; flex-direction: row; }
+hr { background-color: rgb(0, 0, 0);
+    height: 1px;
+    border: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
