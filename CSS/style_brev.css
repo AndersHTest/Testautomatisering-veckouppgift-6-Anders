@@ -1,0 +1,73 @@
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    color: #253047;
+    font-family: "calibri";
+    background-color: rgb(180, 191, 194);
+}
+
+main {
+    position: relative;
+    width: min(660px, calc(100vw - 36px));
+    min-height: 420px;
+    padding: 3em 2em 1em 4em;
+    background: #fffefa;
+    border: 1px solid rgba(255,255,255,.8);
+    border-radius: 12px;
+    box-shadow: 0 38px 55px -18px rgba(24, 37, 34, .42),
+                0 18px 28px -12px rgba(24, 37, 34, .24),
+                0 3px 7px rgba(24, 37, 34, .12);
+}
+
+
+.stamp {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    width: 66px;
+    height: 75px;
+    display: grid;
+    place-items: center;
+    color: #a75f54;
+    border: 2px dashed #c88575;
+    font: 11px/1.2 Arial, sans-serif;
+    letter-spacing: .12em;
+    text-align: center;
+    transform: rotate(0deg);
+}
+
+.postmark {
+    position: absolute;
+    top: 68px;
+    right: 30px;
+    width: 72px;
+    height: 34px;
+    border-top: 1px solid #c88575;
+    border-bottom: 1px solid #c88575;
+    transform: rotate(-8deg);
+    opacity: .7;
+}
+
+.name { font-weight: 700;}
+
+
+address {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-style: normal;
+    font-size: clamp(17px, 3vw, 21px);
+    line-height: 1.8;
+    letter-spacing: .035em;
+    width: 100%;
+}
+
+address div {
+    min-height: 1.6em;
+    max-width: 25em;
+    border-bottom: 1px solid #0000002a;
+}
